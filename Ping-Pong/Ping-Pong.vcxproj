@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioEngine.cpp" />
     <ClCompile Include="GameWindow.cpp" />
     <ClCompile Include="Ping-Pong.cpp" />
     <ClCompile Include="RenderEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioEngine.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="RenderEngine.h" />
   </ItemGroup>

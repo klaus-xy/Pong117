@@ -1,0 +1,69 @@
+﻿  GameWindow.cpp
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(17,47): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(17,63): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(154,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(154,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(232,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(233,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(334,39): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(339,39): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(442,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(443,12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(519,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(520,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(533,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(533,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(536,143): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(536,111): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(536,80): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(536,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(539,133): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(539,78): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(539,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(540,133): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(540,77): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(540,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(543,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(543,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(543,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(543,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(546,115): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(546,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(546,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(546,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(549,128): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(549,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(549,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(549,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(566,108): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(566,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(567,106): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(567,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(568,144): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(568,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(572,132): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(572,72): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(572,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(577,128): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(577,72): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(577,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(584,124): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(584,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(584,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(589,123): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(589,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(589,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(593,124): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(593,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(593,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(596,137): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(596,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(596,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(671,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\cruis\Desktop\My-First-Game\Ping-Pong\GameWindow.cpp(672,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating code
+  1 of 228 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Ping-Pong.vcxproj -> C:\Users\cruis\Desktop\My-First-Game\x64\Release\Ping-Pong.exe

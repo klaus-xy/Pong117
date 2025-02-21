@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\cruis\\Desktop\\My-First-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\GameWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\GameWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\Ping-Pong.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\Ping-Pong.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\GameWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\RenderEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\RenderEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\AudioEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\AudioEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\Ping-Pong.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\Ping-Pong.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\RenderEngine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\RenderEngine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\AudioEngine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\AudioEngine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +38,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ping-Pong.cpp",
-              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\Ping-Pong.cpp",
-              "RelativeDocumentMoniker": "Ping-Pong\\Ping-Pong.cpp",
-              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\Ping-Pong.cpp",
-              "RelativeToolTip": "Ping-Pong\\Ping-Pong.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
+              "DocumentIndex": 1,
+              "Title": "GameWindow.cpp",
+              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.cpp",
+              "RelativeDocumentMoniker": "Ping-Pong\\GameWindow.cpp",
+              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.cpp",
+              "RelativeToolTip": "Ping-Pong\\GameWindow.cpp",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAwEQCAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-22T23:12:06.731Z",
+              "WhenOpened": "2025-01-23T09:14:38.428Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "GameWindow.h",
+              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.h",
+              "RelativeDocumentMoniker": "Ping-Pong\\GameWindow.h",
+              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.h",
+              "RelativeToolTip": "Ping-Pong\\GameWindow.h",
+              "ViewState": "AQIAACwAAAAAAAAAAAAowEoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-23T09:14:32.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RenderEngine.cpp",
               "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\RenderEngine.cpp",
               "RelativeDocumentMoniker": "Ping-Pong\\RenderEngine.cpp",
               "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\RenderEngine.cpp",
               "RelativeToolTip": "Ping-Pong\\RenderEngine.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAABkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-24T00:43:52.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "AudioEngine.cpp",
+              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\AudioEngine.cpp",
+              "RelativeDocumentMoniker": "Ping-Pong\\AudioEngine.cpp",
+              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\AudioEngine.cpp",
+              "RelativeToolTip": "Ping-Pong\\AudioEngine.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-12T18:06:11.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AudioEngine.h",
+              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\AudioEngine.h",
+              "RelativeDocumentMoniker": "Ping-Pong\\AudioEngine.h",
+              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\AudioEngine.h",
+              "RelativeToolTip": "Ping-Pong\\AudioEngine.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-12T18:06:02.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RenderEngine.h",
               "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\RenderEngine.h",
               "RelativeDocumentMoniker": "Ping-Pong\\RenderEngine.h",
               "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\RenderEngine.h",
               "RelativeToolTip": "Ping-Pong\\RenderEngine.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-24T00:34:44.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T00:34:44.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameWindow.cpp",
-              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.cpp",
-              "RelativeDocumentMoniker": "Ping-Pong\\GameWindow.cpp",
-              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.cpp",
-              "RelativeToolTip": "Ping-Pong\\GameWindow.cpp",
-              "ViewState": "AQIAADAAAAAAAAAAAAAkwEoAAAA0AAAA",
+              "DocumentIndex": 4,
+              "Title": "Ping-Pong.cpp",
+              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\Ping-Pong.cpp",
+              "RelativeDocumentMoniker": "Ping-Pong\\Ping-Pong.cpp",
+              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\Ping-Pong.cpp",
+              "RelativeToolTip": "Ping-Pong\\Ping-Pong.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-23T09:14:38.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameWindow.h",
-              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.h",
-              "RelativeDocumentMoniker": "Ping-Pong\\GameWindow.h",
-              "ToolTip": "C:\\Users\\cruis\\Desktop\\My-First-Game\\Ping-Pong\\GameWindow.h",
-              "RelativeToolTip": "Ping-Pong\\GameWindow.h",
-              "ViewState": "AQIAABMAAAAAAAAAAAAwwCIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-23T09:14:32.484Z",
+              "WhenOpened": "2025-01-22T23:12:06.731Z",
               "EditorCaption": ""
             }
           ]

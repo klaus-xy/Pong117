@@ -1,5 +1,14 @@
 #include "RenderEngine.h"
 
+RenderEngine::RenderEngine() {
+	hFont = nullptr; // Initialize font handle
+}
+
+RenderEngine::~RenderEngine() {
+	if (hFont) {
+		DeleteObject(hFont);  // Free font resource
+	}
+}
 
 void RenderEngine::DrawRect(HDC hdc, int left, int top, int right, int bottom, COLORREF rgbColor)
 {
@@ -41,3 +50,52 @@ void RenderEngine::DrawEllipse(HDC hdc, int left, int top, int right, int bottom
 	SelectObject(hdc, oldBrush);
 	DeleteObject(brush);
 }
+
+void RenderEngine::DrawText(HDC hdc, int x, int y, const std::wstring& text, COLORREF color, const std::wstring& fontName, int fontSize) {
+
+	// Create new font
+	HFONT hNewFont = CreateFont(
+		fontSize, 0, 0, 0, FW_BOLD, FALSE, FALSE, FALSE, DEFAULT_CHARSET,
+		OUT_TT_PRECIS, CLIP_DEFAULT_PRECIS, ANTIALIASED_QUALITY,
+		DEFAULT_PITCH | FF_DONTCARE, fontName.c_str());
+
+	if (hNewFont) {
+		SelectObject(hdc, hNewFont);
+	}
+
+	SetTextColor(hdc, color);
+	SetBkMode(hdc, TRANSPARENT);
+	TextOut(hdc, x, y, text.c_str(), text.length());
+
+	// Clean up font 
+	if (hNewFont) {
+		DeleteObject(hNewFont);
+	}
+}
+
+void RenderEngine::DrawImg(HDC hdc, HBITMAP hCameoBitmap, int left, int top) {
+
+	HDC hdcImg = CreateCompatibleDC(hdc);
+	SelectObject(hdcImg, hCameoBitmap);
+
+	BITMAP bm;
+	GetObject(hCameoBitmap, sizeof(BITMAP), &bm);
+
+	//// Center the  image
+	//int cameoX = screenWidth ;
+	//int cameoY = screenHeight ;
+
+	// Draw the image
+	BitBlt(
+		hdc,
+		left,top,
+		bm.bmWidth, bm.bmHeight,
+		hdcImg,
+		0, 0,
+		SRCCOPY
+	);
+
+	DeleteDC(hdcImg);
+}
+
+//Monospac821 BT

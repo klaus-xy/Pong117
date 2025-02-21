@@ -7,10 +7,10 @@
 // ENTRY POINT FOR WINDOWS APP
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
-	GameWindow gameWindow(hInstance, 800,600 );
+	GameWindow gameWindow(hInstance, 1200,600 );
 
 	// INITIALIZE NEW GAME WINDOW
-	if (!gameWindow.Initialize()) {
+	if (!gameWindow.InitGameWindow()) {
 		MessageBox(nullptr, L"Looks like Klaus messed something up again. Call him. Or not. Please don't.", L"Game Window initialization failed",MB_ICONWARNING);
 		return -1;
 	};
