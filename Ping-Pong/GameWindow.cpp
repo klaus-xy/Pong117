@@ -1,16 +1,7 @@
 ﻿#include "GameWindow.h"
 #include <algorithm>
-#include <vector>
 #include <mmsystem.h>
 #pragma comment (lib, "winmm.lib")
-
-
-// Konami Code sequence: ↑ ↑ ↓ ↓ ← → ← → B A
-std::vector<int> konamiCode = { VK_UP, VK_UP, VK_DOWN, VK_DOWN, VK_LEFT, VK_RIGHT, VK_LEFT, VK_RIGHT, 'B', 'A' };
-std::vector<int> code117 = { 'H','A','L','I','Y' }; // or bap
-// std::vector<int> inputBuffer;
-int konamiIndex = 0;
-int code117Index = 0;
 
 
 GameWindow::GameWindow(HINSTANCE hInstance, float width, float height)

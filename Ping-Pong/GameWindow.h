@@ -1,21 +1,8 @@
-#include <Windows.h>
+﻿#include <Windows.h>
 #include "RenderEngine.h"
 #include "AudioEngine.h"
+#include <vector>
 
-
-
-// Game state
-//struct GameData {
-//	int paddlewHeight;
-//	int player1YPos;
-//	int player2YPos;
-//	int ballX;
-//	int ballY;
-//	int ballSpeedX;
-//	int ballSpeedY;
-//	int score1;
-//	int score2;
-//};
 
 class GameWindow
 {
@@ -36,8 +23,6 @@ private:
 	int frameCount;
 	double fps;
 	double timeElapsed; // Timer for FPS calculation
-
-
 
 	// Buffer
 	HDC memDC;
@@ -72,7 +57,7 @@ public:
 	int score2;
 	int winScore;
 	int winnerNum;
-	const int eggWinScore = 117;
+	
 
 	float originalHeight;
 	float originalWidth;
@@ -139,6 +124,14 @@ public:
 	RenderEngine* renderEngine;
 	AudioEngine* audioEngine;
 
+	// IGNORE THIS 👀👀
+	private:
+		int konamiIndex = 0;
+		int code117Index = 0;
+		const int eggWinScore = 117;
+
+		const std::vector<int> konamiCode = { VK_UP, VK_UP, VK_DOWN, VK_DOWN, VK_LEFT, VK_RIGHT, VK_LEFT, VK_RIGHT, 'B', 'A' };
+		const std::vector<int> code117 = { 'H','A','L','I','Y' };
 };
 
 
