@@ -31,5 +31,6 @@
 *.out
 *.app
 
+# Seemed to be causing issues with commiting
 *.vsidx
 *.opendb
