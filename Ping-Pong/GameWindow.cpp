@@ -1,6 +1,7 @@
 ﻿#include "GameWindow.h"
 #include <algorithm>
 #include <mmsystem.h>
+#include "resource.h"
 #pragma comment (lib, "winmm.lib")
 
 
@@ -184,6 +185,7 @@ bool GameWindow::InitGameWindow()
 	wc.hInstance = hInstance;
 	wc.lpszClassName = CLASS_NAME;
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW); // Default cursor
+	wc.hIcon = LoadIcon(hInstance,MAKEINTRESOURCE(IDI_ICON1));
 	
 	//wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 10); // bg color
 

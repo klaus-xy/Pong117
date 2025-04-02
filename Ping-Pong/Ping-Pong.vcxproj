@@ -136,6 +136,14 @@
     <ClInclude Include="AudioEngine.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ping-Pong.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\ping-pong_icon-icons.com_63748.ico" />
+    <Image Include="..\..\..\..\Downloads\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
