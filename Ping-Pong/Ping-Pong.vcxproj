@@ -134,6 +134,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioEngine.h" />
+    <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="GameState.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="RenderEngine.h" />
     <ClInclude Include="resource.h" />
