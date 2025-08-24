@@ -30,7 +30,98 @@
 *.exe
 *.out
 *.app
+*.ilk
+*.exp
 
-# Seemed to be causing issues with commiting
+# Visual Studio USER files (keep these ignored)
+*.suo
+*.sdf
+*.opensdf
+*.vc.db
+*.VC.db
 *.vsidx
 *.opendb
+*.db
+.vs/
+**/ipch/
+**/*.ipch
+*.aps
+*.ncb
+*.opt
+*.plg
+
+# Build directories
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+Win32/
+
+# Asset cache files
+*.import
+*.material
+*.mesh
+*.texture
+
+# Game-specific generated files
+*.pdb
+*.idb
+*.res
+*.manifest
+*.tlog
+*.lastbuildstate
+
+# Log files
+*.log
+*.tmp
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Don't ignore assets folder but ignore any cache files in it
+assets/**/*.import
+assets/**/*.cache
+assets/**/*.tmp
+
+# But KEEP these important folders and files:
+!assets/audio/
+!assets/textures/
+!assets/fonts/
+!assets/cameo.bmp
+!**.wav
+!**.mp3
+!**.bmp
+!**.png
+!**.jpg
+!**.ttf
+!**.otf
+
+# =============================================
+# IMPORTANT: DO NOT IGNORE THESE - KEEP IN GIT
+# =============================================
+!*.sln
+!*.vcxproj
+!*.vcxproj.filters
+!*.vcxproj.user
+!resource.h
+!Ping-Pong.rc
