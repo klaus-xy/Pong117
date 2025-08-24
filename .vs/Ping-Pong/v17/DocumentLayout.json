@@ -1,84 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\cruis\\Desktop\\C L O W N  W A R E\\Pong Game\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\C L O W N  W A R E\\Pong Game\\Ping-Pong\\GameWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\GameWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Downloads\\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Downloads\\ping-pong_icon-icons.com_63748.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|C:\\Users\\cruis\\Desktop\\C L O W N  W A R E\\Pong Game\\Ping-Pong\\GameWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B70A364-0F08-4EE4-9EF7-900F1C2921E1}|Ping-Pong\\Ping-Pong.vcxproj|solutionrelative:Ping-Pong\\GameWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico - Icon [128x128, 32 bit, BMP]",
-              "DocumentMoniker": "C:\\Users\\cruis\\Downloads\\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico",
-              "ToolTip": "C:\\Users\\cruis\\Downloads\\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico - Icon [128x128, 32 bit, BMP]",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico - Icon [128x128, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2025-04-02T11:22:29.868Z",
-              "EditorCaption": " - Icon [128x128, 32 bit, BMP]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ping-pong_icon-icons.com_63748.ico - Icon [128x128, 32 bit, BMP]",
-              "DocumentMoniker": "C:\\Users\\cruis\\Downloads\\ping-pong_icon-icons.com_63748.ico",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\ping-pong_icon-icons.com_63748.ico",
-              "ToolTip": "C:\\Users\\cruis\\Downloads\\ping-pong_icon-icons.com_63748.ico - Icon [128x128, 32 bit, BMP]",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\ping-pong_icon-icons.com_63748.ico - Icon [128x128, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2025-04-02T10:55:59.085Z",
-              "EditorCaption": " - Icon [128x128, 32 bit, BMP]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameWindow.h",
-              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\C L O W N  W A R E\\Pong Game\\Ping-Pong\\GameWindow.h",
-              "RelativeDocumentMoniker": "Ping-Pong\\GameWindow.h",
-              "ToolTip": "C:\\Users\\cruis\\Desktop\\C L O W N  W A R E\\Pong Game\\Ping-Pong\\GameWindow.h",
-              "RelativeToolTip": "Ping-Pong\\GameWindow.h",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAWwF8AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-23T10:11:11.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameWindow.cpp",
-              "DocumentMoniker": "C:\\Users\\cruis\\Desktop\\C L O W N  W A R E\\Pong Game\\Ping-Pong\\GameWindow.cpp",
-              "RelativeDocumentMoniker": "Ping-Pong\\GameWindow.cpp",
-              "ToolTip": "C:\\Users\\cruis\\Desktop\\C L O W N  W A R E\\Pong Game\\Ping-Pong\\GameWindow.cpp",
-              "RelativeToolTip": "Ping-Pong\\GameWindow.cpp",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAYwLsAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-23T09:51:30.981Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
