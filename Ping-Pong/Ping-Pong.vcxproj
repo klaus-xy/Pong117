@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AudioEngine.cpp" />
+    <ClCompile Include="GameState.cpp" />
     <ClCompile Include="GameWindow.cpp" />
     <ClCompile Include="Ping-Pong.cpp" />
     <ClCompile Include="RenderEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioEngine.h" />
+    <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="GameSettings.h" />
+    <ClInclude Include="GameState.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="RenderEngine.h" />
     <ClInclude Include="resource.h" />
@@ -144,6 +148,12 @@
   <ItemGroup>
     <Image Include="..\..\..\..\Downloads\ping-pong_icon-icons.com_63748.ico" />
     <Image Include="..\..\..\..\Downloads\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\Ayo%27s Backup\Pong Game\x64\Release\assets\audio\8-bit-music.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\Unity\Projects\PROJECT ASTRO\Assets\Gotham-Black.otf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

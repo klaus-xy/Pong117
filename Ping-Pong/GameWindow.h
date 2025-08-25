@@ -36,19 +36,21 @@ private:
 	float currentStartDelay;
 
 public:
+	
+	float currentPaddleWidth;
+	float currentPaddleHeight;
+	float currentPaddleSpeed;
 
-	float paddleWidth;
-	float paddleHeight;
-	float paddleSpeed;
 	float paddingX, paddingY;	// Screen padding value
-	float player1YPos;
-	float player2YPos;
-	float ballSize;
+	float currentPlayer1YPos;
+	float currentPlayer2YPos;
+	float currentBallSize;
+
 	float maxBallSize;
-	float ballPosX;
-	float ballPosY;
-	float ballVelX;
-	float ballVelY;
+	float currentBallPosX;
+	float currentBallPosY;
+	float currentBallVelX;
+	float currentBallVelY;
 	float ballBaseVel;
 	float ballBounciness;
 	float deflectMagnitude;

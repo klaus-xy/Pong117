@@ -13,6 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{d1f92c9f-fa16-431f-9d09-75cbc4559761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{50467e88-8115-40da-a7f4-45ff0a3df5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{c30bf5e6-540d-447d-a6ed-c48e5031fd5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\audio">
+      <UniqueIdentifier>{1c7e43e0-bd69-488a-a972-d349cd3d5b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\textures">
+      <UniqueIdentifier>{f09aff43-0c26-40d5-8a3c-73ccea3d1c0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\fonts">
+      <UniqueIdentifier>{ef4a5ef8-17fc-47b1-bf3f-49c51a9f45f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game">
+      <UniqueIdentifier>{0f2ed327-7604-41bb-9ae4-4013a78c0f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rendering">
+      <UniqueIdentifier>{4b07b162-f098-49dd-9ded-d16f7a2d03c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\audio">
+      <UniqueIdentifier>{73c61ace-7867-4077-95da-f954927e3b6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ping-Pong.cpp">
@@ -26,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="AudioEngine.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>src\game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +71,15 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConstants.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSettings.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Ping-Pong.rc">
@@ -54,5 +93,15 @@
     <Image Include="..\..\..\..\Downloads\winner_sport_sports_player_play_game_competition_tennis_icon_255120.ico">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\Ayo%27s Backup\Pong Game\x64\Release\assets\audio\8-bit-music.mp3">
+      <Filter>assets\audio</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\Unity\Projects\PROJECT ASTRO\Assets\Gotham-Black.otf">
+      <Filter>assets\fonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>

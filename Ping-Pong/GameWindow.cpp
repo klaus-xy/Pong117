@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <mmsystem.h>
 #include "resource.h"
+#include "GameConstants.h";
 #pragma comment (lib, "winmm.lib")
 
 
@@ -15,25 +16,29 @@ GameWindow::GameWindow(HINSTANCE hInstance, float width, float height)
 	originalPaddleHeight = 100.0f;
 	originalPaddleSpeed = 600.0f;
 	originalBallSize = 20;
-	maxBallSize = 26.0f;
+	maxBallSize = GameConstants::MAX_BALL_SIZE;
 	originalBallVelX = 700.0f;
 	originalBallVelY = 0.0f;
 
 	hScale = 1;
 	wScale = 1;
 	textScale = (wScale + hScale)/2;
-	paddleWidth = originalPaddleWidth*wScale;
-	paddleHeight = originalPaddleHeight*hScale;
-	paddleSpeed = originalPaddleSpeed;
-	paddingX = 20.0f;
-	paddingY = 20.0f;
-	player1YPos = wHeight/2.0f - paddleHeight/2.0f;
-	player2YPos = wHeight/2.0f - paddleHeight / 2.0f;
-	ballSize = originalBallSize;
-	ballPosX = wWidth/2.0f;
-	ballPosY = wHeight/2.0f;
-	ballVelX = originalBallVelX;
-	ballVelY = originalBallVelY;
+
+	currentPaddleWidth = GameConstants::PADDLE_WIDTH * wScale;
+	currentPaddleHeight = GameConstants::PADDLE_HEIGHT * hScale;
+	currentPaddleSpeed = originalPaddleSpeed;
+
+	paddingX = GameConstants::WINDOW_PADDING_X;
+	paddingY = GameConstants::WINDOW_PADDING_Y;
+
+	currentPlayer1YPos = wHeight / 2.0f - currentPaddleHeight / 2.0f;
+	currentPlayer2YPos = wHeight / 2.0f - currentPaddleHeight / 2.0f;
+
+	currentBallSize = originalBallSize;
+	currentBallPosX = wWidth/2.0f;
+	currentBallPosY = wHeight/2.0f;
+	currentBallVelX = originalBallVelX;
+	currentBallVelY = originalBallVelY;
 	colliderPadding = 2.0f;
 	ballBounciness = 1.015f;
 	deflectMagnitude = 10.0f;
@@ -287,14 +292,14 @@ void GameWindow::Input()
 	if (gameStartDelayTimer <= (currentStartDelay/1.5) && !bIsGameOver)
 	{
 		// 'W'
-		if (GetAsyncKeyState(0x57) && player1YPos > 0)
+		if (GetAsyncKeyState(0x57) && currentPlayer1YPos > 0)
 		{
-			player1YPos -= paddleSpeed * deltaTime;
+			currentPlayer1YPos -= currentPaddleSpeed * deltaTime;
 		}
 
 		// 'S'
-		if (GetAsyncKeyState(0x53) && (player1YPos + paddleHeight) < wHeight) {
-			player1YPos += paddleSpeed * deltaTime;
+		if (GetAsyncKeyState(0x53) && (currentPlayer1YPos + currentPaddleHeight) < wHeight) {
+			currentPlayer1YPos += currentPaddleSpeed * deltaTime;
 		}
 
 		// PLAYER 2 CONTROLS [LOCAL MULTIPLAYER]
@@ -303,40 +308,37 @@ void GameWindow::Input()
 
 
 			// UP ARROW
-			if (GetAsyncKeyState(VK_UP) && player2YPos > 0)
+			if (GetAsyncKeyState(VK_UP) && currentPlayer2YPos > 0)
 			{
-				player2YPos -= paddleSpeed * deltaTime;
+				currentPlayer2YPos -= currentPaddleSpeed * deltaTime;
 				// OutputDebugString(L"Player2 Moving Up...\n");
 			}
 
 			// DOWN ARROW
-			if (GetAsyncKeyState(VK_DOWN) && (player2YPos + paddleHeight) < wHeight) {
-				player2YPos += paddleSpeed * deltaTime;
+			if (GetAsyncKeyState(VK_DOWN) && (currentPlayer2YPos + currentPaddleHeight) < wHeight) {
+				currentPlayer2YPos += currentPaddleSpeed * deltaTime;
 			}
 		}
 
 		// Else use AI player
 		else 
 		{
-			float paddle2Center = player2YPos + paddleHeight / 2.0f;
-			float ballCenter = ballPosY + ballSize / 2.0f;
+			float paddle2Center = currentPlayer2YPos + currentPaddleHeight / 2.0f;
+			float ballCenter = currentBallPosY + currentBallSize / 2.0f;
 			
 			// If ball is above paddle
-			if ((paddle2Center > ballCenter + aiMoveThreshold * hScale) && player2YPos > 0 ) 
+			if ((paddle2Center > ballCenter + aiMoveThreshold * hScale) && currentPlayer2YPos > 0 ) 
 			{
-				player2YPos -= paddleSpeed * 0.75 * deltaTime; // Move up
+				currentPlayer2YPos -= currentPaddleSpeed * 0.75 * deltaTime; // Move up
 			}
 			// If ball is below paddle
-			else if ((paddle2Center < ballCenter - aiMoveThreshold * hScale) && (player2YPos + paddleHeight < wHeight ))
+			else if ((paddle2Center < ballCenter - aiMoveThreshold * hScale) && (currentPlayer2YPos + currentPaddleHeight < wHeight ))
 			{
-				player2YPos += paddleSpeed * 0.75 * deltaTime;	// Move down
+				currentPlayer2YPos += currentPaddleSpeed * 0.75 * deltaTime;	// Move down
 			}
 		}
 
-	}
-
-	
-
+	}	
 
 }
 
@@ -344,8 +346,8 @@ void GameWindow::Move()
 {
 	if (gameStartDelayTimer <= 0 && !bIsGameOver) 
 	{
-		ballPosX += ballVelX * deltaTime; //dir and veelocty
-		ballPosY += ballVelY * deltaTime;
+		currentBallPosX += currentBallVelX * deltaTime; //dir and veelocty
+		currentBallPosY += currentBallVelY * deltaTime;
 	}
 	
 }
@@ -354,38 +356,38 @@ void GameWindow::Collision()
 {
 	// BALL COLLISION DETECTION
 // Test Vertical Bounds
-	if (ballPosY <= 0)
+	if (currentBallPosY <= 0)
 	{
-		ballVelY = abs(ballVelY);	// Use abs for better collision
+		currentBallVelY = abs(currentBallVelY);	// Use abs for better collision detection
 		//audioEngine->PlayClip(L"paddle-hit");
 	}
-	else if (ballPosY + ballSize >= wHeight)
+	else if (currentBallPosY + currentBallSize >= wHeight)
 	{
-		ballVelY = -abs(ballVelY);	// Use abs for better collision
+		currentBallVelY = -abs(currentBallVelY);	// Use abs for better collision detection
 		//audioEngine->PlayClip(L"paddle-hit");
 	}
 
 	// Test Paddle bounds
 	// Paddle 1
-	if ((ballPosX <= (paddingX + paddleWidth + colliderPadding)) && ((ballPosY + ballSize) >= (player1YPos - colliderPadding)) && (ballPosY) <= (player1YPos + paddleHeight + colliderPadding))
+	if ((currentBallPosX <= (paddingX + currentPaddleWidth + colliderPadding)) && ((currentBallPosY + currentBallSize) >= (currentPlayer1YPos - colliderPadding)) && (currentBallPosY) <= (currentPlayer1YPos + currentPaddleHeight + colliderPadding))
 	{
-		ballVelX = abs(ballVelX); // Use absolute values for better collision
+		currentBallVelX = abs(currentBallVelX); // Use absolute values for better collision
 
 		// Add proper ball deflection from the paddle depending on hit point on the paddle
-		float paddleCenter = player1YPos + paddleHeight / 2.0f;
-		float hitPosition = (ballPosY + ballSize / 2.0f) - paddleCenter;
-		ballVelY = hitPosition * deflectMagnitude;
-		ballVelX *= ballBounciness;
+		float paddleCenter = currentPlayer1YPos + currentPaddleHeight / 2.0f;
+		float hitPosition = (currentBallPosY + currentBallSize / 2.0f) - paddleCenter;
+		currentBallVelY = hitPosition * deflectMagnitude;
+		currentBallVelX *= ballBounciness;
 
 		audioEngine->PlayClip(L"assets/audio/paddle-hit");
 	}
-	else if (ballPosX < 0)
+	else if (currentBallPosX < 0)
 	{
 		score2++;
 		audioEngine->PlayClip(L"assets/audio/score");
 		serveTextColor = player2Color;
 		ResetGame();
-		ballVelX *= -1;
+		currentBallVelX *= -1;
 		
 		if (score2 >= winScore) 
 		{
@@ -395,19 +397,19 @@ void GameWindow::Collision()
 	}
 
 	// Paddle 2
-	if (((ballPosX + ballSize) >= (wWidth - paddingX - paddleWidth + colliderPadding)) && ((ballPosY + ballSize) >= (player2YPos - colliderPadding)) && (ballPosY) <= (player2YPos + paddleHeight + colliderPadding))
+	if (((currentBallPosX + currentBallSize) >= (wWidth - paddingX - currentPaddleWidth + colliderPadding)) && ((currentBallPosY + currentBallSize) >= (currentPlayer2YPos - colliderPadding)) && (currentBallPosY) <= (currentPlayer2YPos + currentPaddleHeight + colliderPadding))
 	{
-		ballVelX = -abs(ballVelX);	// Use abs for better collision
+		currentBallVelX = -abs(currentBallVelX);	// Use abs for better collision
 
 		// Add proper ball deflection from the paddle depending on hit point on the paddle
-		float paddleCenter = player2YPos + paddleHeight / 2;
-		float hitPosition = (ballPosY + ballSize / 2) - paddleCenter;
-		ballVelY = hitPosition * deflectMagnitude;
-		ballVelX *= ballBounciness;
+		float paddleCenter = currentPlayer2YPos + currentPaddleHeight / 2;
+		float hitPosition = (currentBallPosY + currentBallSize / 2) - paddleCenter;
+		currentBallVelY = hitPosition * deflectMagnitude;
+		currentBallVelX *= ballBounciness;
 
 		audioEngine->PlayClip(L"assets/audio/paddle-hit");
 	}
-	else if (ballPosX > wWidth)
+	else if (currentBallPosX > wWidth)
 	{
 		score1++;
 		audioEngine->PlayClip(L"assets/audio/score");
@@ -442,10 +444,10 @@ void GameWindow::OnResize(float newWidth, float newHeight)
 	
 	textScale = (wScale + hScale) / 2;
 
-	ballSize = originalBallSize * textScale;
-	if (ballSize > maxBallSize) 
+	currentBallSize = originalBallSize * textScale;
+	if (currentBallSize > maxBallSize) 
 	{
-		ballSize = maxBallSize;
+		currentBallSize = maxBallSize;
 	};
 	
 	InitGameScene();
@@ -499,21 +501,21 @@ void GameWindow::InitBuffer(HDC hdc)
 void GameWindow::InitGameScene()
 {
 	// Update paddle params
-	paddleHeight = originalPaddleHeight * hScale;
-	paddleWidth = originalPaddleWidth;		//* textScale;
-	paddleSpeed = originalPaddleSpeed * hScale;
+	currentPaddleHeight = originalPaddleHeight * hScale;
+	currentPaddleWidth = originalPaddleWidth;		//* textScale;
+	currentPaddleSpeed = originalPaddleSpeed * hScale;
 
-	player1YPos = wHeight / 2 - paddleHeight / 2;
-	player2YPos = wHeight / 2 - paddleHeight / 2;
+	currentPlayer1YPos = wHeight / 2 - currentPaddleHeight / 2;
+	currentPlayer2YPos = wHeight / 2 - currentPaddleHeight / 2;
 
 	//ballSize = originalBallSize*textScale*0.8;
 
 	// Reset ball position to center
-	ballPosX = wWidth / 2;
-	ballPosY = wHeight / 2;
+	currentBallPosX = wWidth / 2;
+	currentBallPosY = wHeight / 2;
 
-	ballVelX = originalBallVelX * wScale;
-	ballVelY = originalBallVelY * hScale;
+	currentBallVelX = originalBallVelX * wScale;
+	currentBallVelY = originalBallVelY * hScale;
 }
 
 void GameWindow::DrawGameScene(HDC hdc)
@@ -533,13 +535,13 @@ void GameWindow::DrawGameScene(HDC hdc)
 	renderEngine->DrawText(memDC, (wWidth / 2) + 60 * textScale, (wHeight / 2) - 25 * textScale, L" 1 1 7", RGB(25, 20, 20), font1, 60 * textScale);
 
 	// Player 1 Paddle
-	renderEngine->DrawRect(memDC, paddingX, player1YPos, (paddleWidth + paddingX), (paddleHeight + player1YPos), player1Color);
+	renderEngine->DrawRect(memDC, paddingX, currentPlayer1YPos, (currentPaddleWidth + paddingX), (currentPaddleHeight + currentPlayer1YPos), player1Color);
 
 	// Player 2 Paddle
-	renderEngine->DrawRect(memDC, (wWidth - paddleWidth - paddingX), player2YPos, (wWidth - paddingX), (paddleHeight + player2YPos), player2Color);
+	renderEngine->DrawRect(memDC, (wWidth - currentPaddleWidth - paddingX), currentPlayer2YPos, (wWidth - paddingX), (currentPaddleHeight + currentPlayer2YPos), player2Color);
 
 	// Ball
-	renderEngine->DrawEllipse(memDC, (ballPosX-(ballSize/2)), (ballPosY - (ballSize / 2)), (ballPosX + (ballSize / 2)), (ballPosY + (ballSize / 2)), RGB(255, 255, 255));
+	renderEngine->DrawEllipse(memDC, (currentBallPosX-(currentBallSize/2)), (currentBallPosY - (currentBallSize / 2)), (currentBallPosX + (currentBallSize / 2)), (currentBallPosY + (currentBallSize / 2)), RGB(255, 255, 255));
 
 
 	// Draw score
@@ -548,8 +550,8 @@ void GameWindow::DrawGameScene(HDC hdc)
 	std::wstring fpsText = std::to_wstring((int)fps) + L" FPS";
 	std::wstring hScaleText = L"hScale: " + std::to_wstring(hScale) ;
 	std::wstring wScaleText = L"wScale: " + std::to_wstring(wScale) ;
-	std::wstring player1PosText = L"Player1-YPos: " +std::to_wstring(player1YPos);
-	std::wstring player2PosText = L"Player2-YPos: " +std::to_wstring(player2YPos);
+	std::wstring player1PosText = L"Player1-YPos: " +std::to_wstring(currentPlayer1YPos);
+	std::wstring player2PosText = L"Player2-YPos: " +std::to_wstring(currentPlayer2YPos);
 	std::wstring gameTimeText = L"Game Time: " +std::to_wstring((int)gameTime);
 	std::wstring startDelayTimerText = L"hTimer:  " +std::to_wstring(gameStartDelayTimer);
 	std::wstring singleWinnerText = (score1 > score2 ? L"PLAYER " + std::to_wstring(winnerNum):L"CPU ") + L" WINS";
@@ -661,12 +663,12 @@ void GameWindow::DrawGameScene(HDC hdc)
 
 void GameWindow::ResetGame()
 {
-	ballPosX = wWidth / 2;
-	ballPosY = wHeight / 2;
-	ballVelX = originalBallVelX * wScale;
-	ballVelY = originalBallVelY *hScale;
-	player1YPos = wHeight / 2 - paddleHeight / 2;
-	player2YPos = wHeight / 2 - paddleHeight / 2;
+	currentBallPosX = wWidth / 2;
+	currentBallPosY = wHeight / 2;
+	currentBallVelX = originalBallVelX * wScale;
+	currentBallVelY = originalBallVelY *hScale;
+	currentPlayer1YPos = wHeight / 2 - currentPaddleHeight / 2;
+	currentPlayer2YPos = wHeight / 2 - currentPaddleHeight / 2;
 	
 	currentStartDelay = gameResetDelay;
 	gameStartDelayTimer = currentStartDelay;
