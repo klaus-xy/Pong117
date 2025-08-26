@@ -1,59 +1,78 @@
 ﻿#include "GameWindow.h"
-#include <algorithm>
-#include <mmsystem.h>
+// #include <algorithm>  // why is this here?? cant remember adding it
+// #include <mmsystem.h> // this too
 #include "resource.h"
 #include "GameConstants.h";
-#pragma comment (lib, "winmm.lib")
+//#pragma comment (lib, "winmm.lib") // this neither
 
 
 GameWindow::GameWindow(HINSTANCE hInstance, float width, float height)
 	: hInstance(hInstance), hwnd(nullptr), wWidth(width), wHeight(height)
 {
 	// Initialize Game Parameters
+	// Keep track of original state of game elements for gameplay and resizing reference.
 	originalHeight = height;
 	originalWidth = width;
-	originalPaddleWidth = 20.0f;
-	originalPaddleHeight = 100.0f;
-	originalPaddleSpeed = 600.0f;
-	originalBallSize = 20;
+
+	originalPaddleWidth = GameConstants::PADDLE_WIDTH;
+	originalPaddleHeight = GameConstants::PADDLE_HEIGHT;
+	originalPaddleSpeed = GameConstants::PADDLE_SPEED;
+	originalBallSize = GameConstants::BALL_SIZE;
 	maxBallSize = GameConstants::MAX_BALL_SIZE;
-	originalBallVelX = 700.0f;
-	originalBallVelY = 0.0f;
+	originalBallVelX = GameConstants::START_BALL_VEL_X;
+	originalBallVelY = GameConstants::START_BALL_VEL_Y;
 
 	hScale = 1;
 	wScale = 1;
 	textScale = (wScale + hScale)/2;
 
-	currentPaddleWidth = GameConstants::PADDLE_WIDTH * wScale;
-	currentPaddleHeight = GameConstants::PADDLE_HEIGHT * hScale;
-	currentPaddleSpeed = originalPaddleSpeed;
-
+	//Screen padding
 	paddingX = GameConstants::WINDOW_PADDING_X;
 	paddingY = GameConstants::WINDOW_PADDING_Y;
+
+	// Game State params
+	currentPaddleWidth = originalPaddleWidth * wScale;
+	currentPaddleHeight = originalPaddleHeight * hScale;
+	currentPaddleSpeed = originalPaddleSpeed;
 
 	currentPlayer1YPos = wHeight / 2.0f - currentPaddleHeight / 2.0f;
 	currentPlayer2YPos = wHeight / 2.0f - currentPaddleHeight / 2.0f;
 
 	currentBallSize = originalBallSize;
+
+	// Center the ball
 	currentBallPosX = wWidth/2.0f;
 	currentBallPosY = wHeight/2.0f;
+
 	currentBallVelX = originalBallVelX;
 	currentBallVelY = originalBallVelY;
 	colliderPadding = 2.0f;
 	ballBounciness = 1.015f;
 	deflectMagnitude = 10.0f;
-	aiMoveThreshold = 50.0f; // easy 50 + slow speed; md 25; hd 10;
+
+	aiMoveThreshold = GameConstants::AI_MOVE_THRESHOLD_EASY; // easy 50 + slow speed; md 25; hd 10;
+
+	// Gameplay states
 	score1 = 0;
 	score2 = 0;
 	winScore = 7;
 	winnerNum = 0;
 
-	player1Color = RGB(20, 200, 200);
-	player2Color = RGB(255, 50, 50);
+
+	bIsRunning = true;
+	bGameHasStarted = false;
+	bIsMultiPlayer = false;
+	bIsGameOver = false;
+	bIsDeveggFound = false;
+	bIs117Found = false;
+
+	player1Color = GameConstants::PLAYER_1_COLOR;
+	player2Color = GameConstants::PLAYER_2_COLOR;
 	serveTextColor = player1Color;
 	font1 = L"Gotham";
 	font2 = L"Monospac821 BT";
-
+	
+	// Initailize timing variables
 	QueryPerformanceFrequency(&frequency);		  // Get timer frequency
 	QueryPerformanceCounter(&lastFrameTime);     // Initialize last frame time
 	deltaTime = 0.0f;
@@ -70,12 +89,6 @@ GameWindow::GameWindow(HINSTANCE hInstance, float width, float height)
 	gameTime = 0.0f;
 
 
-	bIsRunning = true;
-	bGameHasStarted = false;
-	bIsMultiPlayer = false;
-	bIsGameOver = false;
-	bIsDeveggFound = false;
-	bIs117Found = false;
 
 	cameoBitmap = (HBITMAP)LoadImage(NULL,L"assets/cameo.bmp",IMAGE_BITMAP,0,0,LR_LOADFROMFILE);
 

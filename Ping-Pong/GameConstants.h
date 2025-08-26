@@ -5,12 +5,12 @@
 // It is recommended to keep all game settings centralized in this file for easy management. Hence,a namespace is used.
 // So, Future Klaus, and to whom it may concern... Avoid scattering magic numbers throughout the codebase.
 
-namespace GameConstants
+namespace GameConstants // Rename to GAME CONFIG
 {
     // GAME WINDOW
-    // Original Game Window dimensions for scaling.
-    constexpr float WINDOW_WIDTH = 1200.0f;
-    constexpr float WINDOW_HEIGHT = 600.0f;
+    // Original Game Window dimensions for scaling. // Choose an aspect ratio when you start working on screen resizing.
+    constexpr float WINDOW_WIDTH = 1200.0f; // 1920
+    constexpr float WINDOW_HEIGHT = 600.0f; // 1080 
     constexpr float WINDOW_PADDING_X = 20.0f;
     constexpr float WINDOW_PADDING_Y = 20.0f;
 
@@ -38,10 +38,12 @@ namespace GameConstants
     constexpr float GAME_RESTART_DELAY = 3.0f;
     constexpr float GAME_RESET_DELAY = 2.0f;
 
-    // Colors
-    constexpr unsigned long PLAYER_1_COLOR = 0x14C8C8; // RGB(20, 200, 200)
-    constexpr unsigned long PLAYER_2_COLOR = 0xFF3232; // RGB(255, 50, 50)
+	// Colors [ Note to self: colorRef is Windows specific. Use uint_32 and HEX to define colors in future updates ]
+    constexpr COLORREF PLAYER_1_COLOR = RGB(20, 200, 200); // 0x14C8C8; // 
+    constexpr COLORREF PLAYER_2_COLOR = RGB(255, 50, 50); // 0xFF3232; // 
+
+    // Themes - consider theming system for diferent game states and seasons (christmas, halloween, easter eggs etc.)
 
 }
 
-// NB: constexpr = compile-time constant.For optimization.
+// NB: constexpr => compile-time constant.For optimization.

@@ -12,12 +12,12 @@
 //    STATE_IDLE,
 //    STATE_PLAYING,
 //    STATE_PAUSED,
-//	STATE_GAMEOVER
+//	  STATE_GAMEOVER
 //};
 
 struct GameState
 {
-    // GAMEPLAY STATE
+	// GAMEPLAY STATES (variables that change during gameplay)
 
 	// Player states
     float player1YPos = 0.0f;

@@ -1,17 +1,20 @@
-// Ping-Pong.cpp : This file contains the 'WinMain' function. Program execution begins and ends there.
-//
+// Ping-Pong.cpp : This file contains the 'WinMain' function. Program execution begins and ends here.
 
-//#include <iostream>
 #include "GameWindow.h"
+#include "GameConstants.h"
 
 // ENTRY POINT FOR WINDOWS APP
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
-	GameWindow gameWindow(hInstance, 1200,600 );
+	float windowWidth = GameConstants::WINDOW_WIDTH;
+	float windowHeight = GameConstants::WINDOW_HEIGHT;
 
-	// INITIALIZE NEW GAME WINDOW
+	// Create new game window
+	GameWindow gameWindow(hInstance, windowWidth, windowHeight);
+
+	// Inoitialize the new game window.	
 	if (!gameWindow.InitGameWindow()) {
-		MessageBox(nullptr, L"Looks like Klaus messed something up again. Call him. Or not. Please don't.", L"Game Window initialization failed",MB_ICONWARNING);
+		MessageBox(nullptr, L"Looks like Klaus messed something up. Again. Contact him [X]: 0xKlaus117 ", L"Game Window initialization failed.",MB_ICONWARNING);
 		return -1;
 	};
 
