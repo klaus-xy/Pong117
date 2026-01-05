@@ -1,0 +1,24 @@
+Ping-Pong/
+├── src/
+│   ├── platform/          # All Win32-specific code
+│   │   ├── windows/
+│   │   │   ├── Window.h    # (Was GameWindow.h)
+│   │   │   └── Window.cpp
+│   │   └── entry/
+│   │       └── WinMain.cpp
+│   ├── rendering/         # RenderEngine (Win32 GDI)
+│   │   ├── RenderEngine.h
+│   │   └── RenderEngine.cpp
+│   ├── audio/             # AudioEngine (Win32 MCI)
+│   │   ├── AudioEngine.h
+│   │   └── AudioEngine.cpp
+│   └── game/              # PURE game logic. Platform-agnostic.
+│       ├── Game.h         # New class to hold game state and logic
+│       ├── Game.cpp
+│       ├── GameState.h    # Struct for game data
+│       └── GameConstants.h
+├── assets/
+│   ├── audio/
+│   ├── textures/
+│   └── fonts/
+└── lib/                   # For future third-party libs
